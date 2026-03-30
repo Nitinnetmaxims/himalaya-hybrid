@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  
+  --color-primary: #2D5A27;
+  --color-primary-dark: #1E3D1A;
+  --color-secondary: #9BC33C;
+  --color-accent: #F1B434;
+  --color-text-main: #333333;
+  --color-text-muted: #666666;
+  --color-bg-light: #F9FAF9;
+  --color-card-bg: #F0F7ED;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-light text-text-main font-sans antialiased leading-[1.6] text-[16px];
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold uppercase tracking-[1px];
+  }
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+}

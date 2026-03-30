@@ -1,0 +1,5 @@
+{
+  "name": "Himalaya Hybrid Seeds",
+  "description": "A premium, high-conversion agricultural and seed industry website featuring interactive tools and modern UI.",
+  "requestFramePermissions": ["geolocation"]
+}
